@@ -1,0 +1,53 @@
+name: interview_task
+description: "A new Flutter project to display a grid of titles and URLs using a provider and local SQLite storage."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  provider: ^6.0.5
+  path_provider: ^2.0.11
+
+  # Offline image caching
+  cached_network_image: ^3.2.3
+
+  # SQLite database package
+  sqflite: ^2.3.1
+  http: ^1.2.2
+  shimmer: ^2.0.0
+  nb_utils: ^6.0.4
+  connectivity_plus: ^4.0.2
+
+  # Path manipulation for SQLite database
+  path: ^1.8.3
+
+  # Cupertino Icons for iOS style icons
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.2.1
+  flutter_launcher_icons: ^0.10.0
+  flutter_lints: ^3.0.0
+
+
+flutter_icons:  # Move this to the root level
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+
+flutter:
+  uses-material-design: true
+
+  # Uncomment this section to add assets if needed in the future
+  assets:
+    - assets/
